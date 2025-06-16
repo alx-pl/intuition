@@ -1,0 +1,26 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\newcommand\oto{\leftrightarrow}\usepackage{amssymb}
+\begin{document}
+
+\noindent Dobre przykłady:
+
+\begin{itemize}
+\item $((((p\to q)\to p)\to p)\to q)\to q$;
+\item $((((p\to q)\to r)\to(p\to r)\to r)\to q)\to q$;
+\item $(p\to q)\oto(((p\to q)\to p)\to q)$;
+\item $(p\to q\to r)\to((p\to r)\to s)\to ((q\to r)\to s)\to (s\to r)\to r$;
+\item $((((p\to q)\to r)\to (p\to r)\to r)\to q)\to q$;
+\item $((p\to q)\to r)\to s\to (q\to r\to t)\to q\to t$.
+\end{itemize}
+
+\noindent  Złe przykłady:
+
+\begin{itemize}
+\item $(p\to q\to r)\to((p\to r)\to s)\to ((q\to r)\to s)\to s$;
+\item $((p\to q)\to r)\to((r\to p)\to r)\to r$;
+\item $((p\to q)\to r)\to (p\to r)\to r$;
+\item $((p\to q)\to a)\to ((q\to p)\to a)\to a$.
+\end{itemize}
+\end{document}
