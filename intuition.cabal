@@ -9,8 +9,8 @@ maintainer:         alx@mimuw.edu.pl
 category:           Math
 build-type:         Simple
 extra-doc-files:    CHANGELOG.md
-common warnings
-    ghc-options: -Wall
+--common warnings
+--   ghc-options: -Wall
 
 library
     exposed-modules:
@@ -28,7 +28,7 @@ library
 
 
 executable intuition
-    import:           warnings
+    -- import:           warnings
     main-is:          Main.hs
 
     -- Modules included in this executable, other than Main.
